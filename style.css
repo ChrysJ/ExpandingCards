@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat';
+	color: #f5f5f5;
+	background: url(./assets/img/pattern-dark.jpg) center / cover;
+	max-width: 2000px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	overflow: hidden;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.container-title {
+	width: 100%;
+	border: 2px #f5f5f5 solid;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 60px;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.box1 {
+	background: url(./assets/img/ironmaiden.jpg);
+	background-position: 37% 50%;
+}
+
+.box2 {
+	background: url(./assets/img/theoffspring.jpg);
+	background-position: 45% 50%;
+}
+
+.box3 {
+	background: url(./assets/img/dropkickmurphys.jpg);
+	background-position: 67% 25%;
+	
+}
+
+.box4 {
+	background: url(./assets/img/volbeat.jpg);
+	background-position: 65% 15%;
+	
+}
+
+.box5 {
+	background: url(./assets/img/airbourne.jpg);
+	background-position: 66% 5%;
+}
+
+.boxes {
+	height: 600px;
+	display: flex;
+	align-items: flex-end;
+	padding: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 2px #f5f5f5 solid;
+	cursor: pointer;
+	transition: 800ms ease-in-out;
+}
+.boxes:not(:last-child){
+	margin-right: 20px;
+}
+
+.boxes.active {
+	flex: 5;
+	width: 850px;
+	background-position: center;
+	cursor: default;
+}
+
+.boxes h2 {
+	opacity: 0;
+	transition: 1000ms;
+	font-size: 30px;
+}
+
+.boxes.active h2 {
+	opacity: 1;
+}
