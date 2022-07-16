@@ -56,13 +56,11 @@ h1 {
 .box3 {
 	background: url(./assets/img/dropkickmurphys.jpg);
 	background-position: 67% 25%;
-	
 }
 
 .box4 {
 	background: url(./assets/img/volbeat.jpg);
 	background-position: 65% 15%;
-	
 }
 
 .box5 {
@@ -81,7 +79,7 @@ h1 {
 	cursor: pointer;
 	transition: 800ms ease-in-out;
 }
-.boxes:not(:last-child){
+.boxes:not(:last-child) {
 	margin-right: 20px;
 }
 
@@ -94,10 +92,10 @@ h1 {
 
 .boxes h2 {
 	opacity: 0;
-	transition: 1000ms;
 	font-size: 30px;
 }
 
 .boxes.active h2 {
 	opacity: 1;
+	transition: opacity 800ms ease 300ms;
 }
